@@ -5,7 +5,6 @@ import Particle from "../components/Particle";
 import pg from "../assets/projects/pg.png";
 import project from "../assets/projects/project.jpeg";
 import lift from "../assets/projects/lift.png";
-import krypto from "../assets/projects/krypto.png";
 import kickstart from "../assets/projects/kickstart.png";
 
 const Projects = () => {
@@ -24,9 +23,11 @@ const Projects = () => {
             <ProjectCard
               imgPath={lift}
               isBlog={false}
-              title="Lift-Buddy"
-              description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
-              ghLink="https://github.com/19sajib/lift-buddy"
+              title="AllyCiv"
+              description="
+
+              I developed a custom website for AllyCiv, an engineering firm specializing in water, to showcase their services and projects. After meeting with the team to gather their requirements, I created a mockup design that was approved before proceeding with the full website development. The website includes a stunning water animation and a user-friendly FAQ section with accordions, and is fully responsive across all devices. A custom contact form was created for visitors to easily reach out to the firm and all necessary qualifications and recent projects are displayed in an easy-to-read way. The website effectively represents the firm's services and capabilities and is sure to attract potential clients."
+              ghLink="https://www.allyciv.co.za"
             />
           </Col>
 
@@ -34,9 +35,10 @@ const Projects = () => {
             <ProjectCard
               imgPath={project}
               isBlog={false}
-              title="Social Media"
-              description="This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD activities. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database."
-              ghLink="https://github.com/19sajib/social-media"
+              title="Transport Action Group"
+              description="The Transport Action Group (TAG) needed a website to accompany their published book on CO2 emissions for the transport industry. The website required membership for users to access digital tools for CO2 emissions calculations and assistance. The website would be linked with the book through QR codes and would have an easy-to-use interface for users to view their carbon footprint and track their progress. It would also include a news section, blog section, and security measures to protect user privacy. Furthermore, the website would have a user-friendly dashboard that displays the user's progress in reducing their carbon footprint, along with suggestions on how to further reduce it.
+              "
+              ghLink="https://transportactiongroup.com/"
             />
           </Col>
 
@@ -44,9 +46,9 @@ const Projects = () => {
             <ProjectCard
               imgPath={kickstart}
               isBlog={false}
-              title="E‑Commerce Website"
-              description="This ecommerce website utilizes a REST API built with Nodejs and Expressjs, allowing for easy CRUD operations on user profiles, products and admin panel. The user interface is designed for efficient product management and includes a complete purchase process. The admin panel, accessible for CRUD on users and products, includes a chart for statistics display. Stripe API is integrated to handle customer payments. The website uses MongoDB and Firebase as the database."
-              ghLink="https://github.com/19sajib/mern-stack-ecommerce"
+              title="Wholesale E‑Commerce"
+              description="Allifas Spice Wholesalers required a web portal for their wholesale business, which allowed customers to place orders and view pricing based on their order quantity or customer tier. A secure login system ensured customer privacy, while a PWA app was created for Android devices. Push notifications were used to advertise promotions, increasing customer engagement. The portal and app provided a user-friendly platform, streamlining the ordering process and driving sales. Moreover, the web portal included a real-time inventory management system that allowed customers to view stock availability for each product. The PWA app was optimized for mobile devices, enabling customers to easily place orders on-the-go."
+              ghLink="https://factory.allifas.co.za"
             />
           </Col>
 
@@ -54,30 +56,9 @@ const Projects = () => {
             <ProjectCard
               imgPath={pg}
               isBlog={false}
-              title="Blog Website"
-              description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
-              ghLink="https://github.com/19sajib/mern-blog-app"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={krypto}
-              isBlog={false}
-              title="Project Krypto"
-              description="Project Krypto is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It allows users to interact with their Metamask wallet and send Ethereum."
-              ghLink="https://github.com/19sajib/Project-Krypto-Web-3.0"
-              demoLink="https://project-krypto.netlify.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={kickstart}
-              isBlog={false}
-              title="Solidity Kickstart"
-              description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
-              ghLink="https://github.com/19sajib/Solidity-Kickstart"
+              title="Retail Ecommerce"
+              description="As the developer of Luxury Lingerie's e-commerce website, I created a modern and user-friendly design that offers a seamless shopping experience. The site features Instagram product tagging, allowing the owners to tag products in their posts, and abandoned cart recovery, which reduces cart abandonment rates. Other standard e-commerce features, such as adding to cart and secure payment gateways, are also included. Overall, the Luxury Lingerie website is a one-stop-shop for all women's sleepwear and lingerie needs, offering a hassle-free shopping experience."
+              ghLink="https://luxurylingerie.co.za"
             />
           </Col>
         </Row>

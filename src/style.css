@@ -88,7 +88,7 @@ html {
   .navbar {
     position: fixed !important;
     transition: all 0.3s ease-out 0s !important;
-    padding: 0.3rem 2rem !important;
+    padding: 1.5rem 2rem !important;
     font-size: 1.2rem !important;
   }
   
@@ -145,7 +145,7 @@ html {
   
   @media (max-width: 767px) {
     .navbar {
-      padding: 1rem 2rem !important;
+      padding: 5rem 2rem 2rem !important;
       font-size: 1.4rem !important;
       background-color: #181a27 !important;
     }
@@ -158,8 +158,8 @@ html {
   }
   
   .logo {
-    height: 2em !important;
-    width: 3.5em !important;
+    height: 50m !important;
+    width: 15% !important;
   }
   
   .navbar-nav .nav-link {
@@ -254,7 +254,7 @@ html {
   }
   
   .home-header {
-    padding-top: 80px !important;
+    padding-top: 50px !important;
   }
   
   .home-section {
@@ -263,8 +263,8 @@ html {
     background-image: var(--image-gradient), url(./assets/home-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    padding-bottom: 30px !important;
-    padding-top: 30px !important;
+    padding-bottom: 50vh !important;
+    padding-top: 150px !important;
   }
   
   .home-content {
@@ -273,6 +273,53 @@ html {
     text-align: left;
   }
   
+  .arrow-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-top: 275px;
+    animation: arrow-bounce 2s infinite;
+  }
+  
+  .arrow-icon {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  
+  @keyframes arrow-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  .scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
   .heading {
     font-size: 2.4em !important;
     padding-left: 50px !important;
@@ -283,19 +330,42 @@ html {
     padding-left: 45px !important;
   }
   
+  .hero-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 400px; /* Change this to whatever max width you want */
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8); /* rgba value for white color with 0.8 opacity */
+      border: none; /* remove border */
+      color: #000000; /* black text color */
+      font-size: 18px; /* font size of the button text */
+      padding: 16px; /* padding of the button */
+      cursor: pointer;
+      transition: all 0.3s ease; /* add transition effect */
+      border-radius: 50px;
+    }
+    
+    .hero-button:hover {
+      background-color: #ffffff; /* change to full white on hover */
+      transform: scale(1.1); /* expand on hover */
+    }
+    
+
   .main-name {
-    color: #7500fa;
+    color: #319bff;
   }
   
   .Typewriter__wrapper {
     font-size: 2.2em !important;
-    color: #7500fa!important;
+    color: #fff!important;
     /* color: #be6adf !important; */
     font-weight: 600 !important;
   }
   .Typewriter__cursor {
     font-size: 2.4em !important;
-    color: #7500fa !important;
+    color: #fff !important;
   }
   
   @media (max-width: 767px) {
@@ -323,20 +393,20 @@ html {
   
   .home-about-section {
     position: relative;
-    padding-bottom: 70px !important;
+    padding-bottom: 170px !important;
     padding-top: 70px !important;
     /* background-image: var(--image-gradient), url('./assets/home-bg.jpg'); */
   }
   
   .home-about-description {
     color: white !important;
-    padding-top: 100px !important;
-    padding-bottom: 20px !important;
+    padding-top: 0px !important;
+    padding-bottom: 120px !important;
     text-align: center;
   }
   
   .home-about-body {
-    padding-top: 50px;
+    padding-top: 0px;
     font-size: 1.2em !important;
     text-align: left;
   }
@@ -409,7 +479,7 @@ html {
   .footer {
     background-color: rgb(1, 6, 36);
     bottom: 0 !important;
-    padding-top: 10px !important;
+    padding-top: 150px !important;
     padding-bottom: 8px !important ;
   }
   .footer-copywright {

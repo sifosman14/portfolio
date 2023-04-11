@@ -1,130 +1,64 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import LaptopImg from "../../assets/home-main.svg";
-import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import React from 'react';
+import styled from 'styled-components';
+import O from '../../assets/o.png';
 
+const AboutUsContainer = styled.div`
+  background-color: transparent;
+  color: #ffffff;
+  padding: 50px;
+  
+  display: flex;
+  flex-direction: row;
+`;
 
-const About = () => {
-    return (
-        <Container fluid className="home-about-section" id="about">
-          <Container>
-            <Row>
-              <Col md={8} className="home-about-description">
-                <h1 style={{ fontSize: "2.6em" }}>
-                  LET ME <span className="yellow"> INTRODUCE </span> MYSELF
-                </h1>
-                <p className="home-about-body">
-                 Hi, my name is <span className="yellow">Md Abu Bakkar Siddiqe Sajib </span>
-                 and I'm from <span className="yellow"> Dhaka, Bangladesh.</span>
-                <br />
-                <br />
-                I recently graduated with a Bachelor's degree in Computer Science and Engineering in 2021.
-                <br />
-                <br />
-                  As a
-                  <b className="yellow"> Full-Stack </b>developer,  
-                  I enjoy tackling new challenges and continuously expanding my skillset.
-                  <br />
-                  <br />I am proficient in
-                    <b className="yellow"> Javascript, </b>
-                    as well as have knowledge in programming languages such as C, Java, Python,
-                  <b className="yellow"> GraphQL, and Solidity.</b>
-                  <br />
-                  <br />
-                  I have a passion for working
-                  with <b className="yellow">Node.js, MongoDB,</b> and
-                  <i>
-                    <b className="yellow">
-                      {" "}
-                      modern Javascript libraries and frameworks
-                    </b>
-                  </i>
-                  &nbsp; like
-                  <i>
-                    <b className="yellow"> React.js</b>
-                  </i>
-                  <br />
-                  <br />
-                  I am also interested in building new
-                  <i>
-                    <b className="yellow"> Web Technologies and Products, </b>
-                    as well as exploring areas related to
-                    <b className="yellow"> Artificial Intelligence.</b>
-                  </i>
-                  <br />
-                  
-                </p>
-              </Col>
-              <Col md={4} className="myAvtar">
-                <Tilt>
-                  <img src={LaptopImg} className="img-fluid" alt="avatar" />
-                </Tilt>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={12} className="home-about-social">
-                <h1>FIND ME ON</h1>
-                <p>
-                Please don't hesitate to reach out to me and <span className="yellow">connect.</span>
-                </p>
-                <ul className="home-about-social-links">
-                  <li className="social-icons">
-                    <a
-                      href="https://github.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="github"
-                    >
-                      <AiFillGithub />
-                    </a>
-                  </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://twitter.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="twitter"
-                    >
-                      <AiOutlineTwitter />
-                    </a>
-                  </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://www.linkedin.com/in/19sajib/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour  home-social-icons"
-                      aria-label="linkedin"
-                    >
-                      <FaLinkedinIn />
-                    </a>
-                  </li>
-                  <li className="social-icons">
-                    <a
-                      href="https://www.instagram.com/19sajib"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="icon-colour home-social-icons"
-                      aria-label="instagram"
-                    >
-                      <AiFillInstagram />
-                    </a>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
-          </Container>
-        </Container>
-      );
-    
-}
+const ImageContainer = styled.div`
+  flex-basis: 50%;
+`;
 
-export default About
+const Image = styled.img`
+  width: 40%;
+  border-radius: 50%;
+  border: 5px solid #ffffff;`
+
+const TextContainer = styled.div`
+  flex-basis: 50%;
+  padding-left: 50px;
+`;
+
+const Heading = styled.h2`
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: left;
+`;
+
+const Paragraph = styled.p`
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+
+`;
+
+const AboutUs = () => {
+  return (
+    <AboutUsContainer>
+      <ImageContainer>
+        <Image src={O} alt="your-alt-text-here" />
+      </ImageContainer>
+      <TextContainer>
+        <Heading>About Me</Heading>
+        <Paragraph>
+        As a skilled frontend developer with over 10 years of experience in HTML, CSS, JavaScript, React, and Next.js, I understand that every project is unique and demands a personalized approach. That's why I collaborate closely with my clients to gain a thorough understanding of their specific needs and objectives. By doing so, I deliver customized solutions that surpass their expectations and provide optimal results.
+        </Paragraph>
+        <Paragraph>
+        My commitment to excellence, innovative mindset, and attention to detail make me a valuable asset to any organization seeking cutting-edge frontend development services. I pride myself on staying ahead of the curve by keeping up-to-date with the latest trends and best practices in the industry. With my passion for frontend development, I offer superior quality web development solutions that deliver exceptional user experiences.
+        </Paragraph>
+        <Paragraph>
+        In conclusion, I prioritize collaboration with clients to achieve success and provide custom-tailored solutions. With my expertise, dedication, and innovative mindset, I am confident in my ability to deliver exceptional results for any frontend development project.
+        </Paragraph>
+      </TextContainer>
+    </AboutUsContainer>
+  );
+};
+
+export default AboutUs;

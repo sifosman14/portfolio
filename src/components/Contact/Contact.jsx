@@ -46,7 +46,7 @@ const Contact = () => {
     
 
     return(
-        <Container style={{paddingTop: '50px'}} >
+        <Container style={{paddingTop: '300px'}} >
             <Row >
             <Col md={6} className="c-left" >
             <h1 >Get in Touch</h1>
